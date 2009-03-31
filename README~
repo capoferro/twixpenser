@@ -1,0 +1,5 @@
+This ruby script + cron job allows you to text message expense reports to be posted (via curl) to the google spread sheet that calculates the shared expenses.
+
+Format:
+
+	d <twitter account> <cost>!<item name>!<item description>
