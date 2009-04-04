@@ -11,7 +11,7 @@ h2. Example yaml:
     @:pass: mypass@
     @:url: http://spreadsheets.google.com/formResponse?formkey=mykey@
 
-Based on the above information, tweeting: @d mytwixpenser 25.15\!myitem\!This is the item I bought@
+Based on the above information, tweeting: @==d mytwixpenser 25.15!myitem!This is the item I bought==@
 	
 ...will produce...
 	
