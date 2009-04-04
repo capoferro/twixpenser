@@ -11,7 +11,7 @@ h2. Example yaml:
     @:pass: mypass@
     @:url: http://spreadsheets.google.com/formResponse?formkey=mykey@
 
-Based on the above information, tweeting: @d mytwixpenser 25.15!myitem!This is the item I bought@
+Based on the above information, tweeting: @d mytwixpenser 25.15\!myitem\!This is the item I bought@
 	
 ...will produce...
 	
@@ -25,10 +25,10 @@ h2. Step by step:
 * Follow your new twitter account, and have your new twitter account follow you.
 
 * Do the following
- @git clone git://github.com/bluepojo/twixpenser.git@
- @cd twixpenser@
- @mv example.twix.conf.yml twix.conf.yml@
- @emacs twix.conf.yml # or which ever your favorite text editor is@
+** @git clone git://github.com/bluepojo/twixpenser.git@
+** @cd twixpenser@
+** @mv example.twix.conf.yml twix.conf.yml@
+** @emacs twix.conf.yml # or which ever your favorite text editor is@
 
 * Enter your new twitter account information in the fields provided in twix.conf.yml
 
