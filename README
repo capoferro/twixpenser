@@ -1,18 +1,39 @@
 This ruby script + cron job allows you to text message expense reports to be posted (via curl) to the google spread sheet that calculates the shared expenses.
 
-Format:
+h2. Twitter Format:
 
-	d <twitter account> <cost><delimiter><item name><delimiter><item description>
+	@d <twitter account> <cost><delimiter><item name><delimiter><item description>@
 
-Example yaml:
-	:delimiter: !
-	:account: mytwixpenser
-	:pass: mypass
-	:url: http://spreadsheets.google.com/formResponse?formkey=mykey
+h2. Example yaml:
 
-	d mytwixpenser 25.15!myitem!This is the item I bought
+    @:delimiter: !@
+    @:account: mytwixpenser@
+    @:pass: mypass@
+    @:url: http://spreadsheets.google.com/formResponse?formkey=mykey@
 
-	...will produce...
+Based on the above information, tweeting: @d mytwixpenser 25.15!myitem!This is the item I bought@
+	
+...will produce...
+	
+|_. Time Stamp|_. Item|_. Description|_. Amount|_. Who Paid?|_. Original Tweet|
+|(Time of Tweet)|myitem|This is the item I bought|25.15 |<name of tweeter>|d mytwixpenser 25.15!myitem!This is the item I bought|
 
-|_.Time Stamp|_.Item|_.Description|_.Amount|_.Who Paid?|_.Original Tweet|_.
-|<Time of Tweet>|myitem|This is the item I bought|25.15 |<name of tweeter>|d mytwixpenser 25.15!myitem!This is the item I bought|
+h2. Step by step:
+
+* Create a new twitter account @ http://www.twitter.com
+
+* Follow your new twitter account, and have your new twitter account follow you.
+
+* Do the following
+ @git clone git://github.com/bluepojo/twixpenser.git@
+ @cd twixpenser@
+ @mv example.twix.conf.yml twix.conf.yml@
+ @emacs twix.conf.yml # or which ever your favorite text editor is@
+
+* Enter your new twitter account information in the fields provided in twix.conf.yml
+
+* Here you have the option of selecting a different delimiter for your text messages.  Default is "!".  Note the format above to see how the delimiter is used.
+
+* Find your google form's key.  This is that random string of characters on the end of the link that you use to access the form. Paste it exactly after the = in the url.
+
+* Todo: how to set up the google form. (with example?)
