@@ -34,6 +34,8 @@ h2. Step by step:
 
 * Here you have the option of selecting a different delimiter for your text messages.  Default is "!".  Note the format above to see how the delimiter is used.
 
+* Create your google spreadsheet that will contain the data.  Here is an example of the spreadsheet I use: "http://spreadsheets.google.com/ccc?key=p9Gin1JloQVNsHvy3Twj3HQ&hl=en":http://spreadsheets.google.com/ccc?key=p9Gin1JloQVNsHvy3Twj3HQ&hl=en .  Feel free to copy it.  Here is the accompanying form: "http://spreadsheets.google.com/viewform?hl=en&formkey=cDlHaW4xSmxvUVZOc0h2eTNUd2ozSFE6MA..":http://spreadsheets.google.com/viewform?hl=en&formkey=cDlHaW4xSmxvUVZOc0h2eTNUd2ozSFE6MA.. which is just the auto generated form, with no edits.
+**Note that this is the url that you need to place in your twixpenser.conf.yml file on the :url line.
 * Find your google form's key.  This is that random string of characters on the end of the link that you use to access the form. Paste it exactly after the = in the url.
 
 * Todo: how to set up the google form. (with example?)
